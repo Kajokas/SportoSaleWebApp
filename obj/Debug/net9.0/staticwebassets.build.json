@@ -1,0 +1,1382 @@
+{
+  "Version": 1,
+  "Hash": "A+q4+vN6F26eWFyc+D3daxr+9GsD9nFpO6lebeJEtP4=",
+  "Source": "ispk",
+  "BasePath": "_content/ispk",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ispk/wwwroot",
+      "Source": "ispk",
+      "ContentRoot": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/",
+      "BasePath": "_content/ispk",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/4sdyrsxxpv-9cw375s321.gz",
+      "SourceId": "ispk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/ispk",
+      "RelativePath": "login#[.{fingerprint=9cw375s321}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/login.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "8nq7qma23d",
+      "Integrity": "XOtbXMcplVL7lhptGvg/G6A3mW9RrsO9cfO7OAB0xZk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/login.html"
+    },
+    {
+      "Identity": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/kd310vmtki-lego5njvg4.gz",
+      "SourceId": "ispk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/ispk",
+      "RelativePath": "index#[.{fingerprint=lego5njvg4}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "4dh8sykuiz",
+      "Integrity": "6C00e1oEX80lFjB/C7HoAAUlgQPlLC4AIAPaUZ418TY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.js"
+    },
+    {
+      "Identity": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/m619kwmba5-4lu37fwiu5.gz",
+      "SourceId": "ispk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/ispk",
+      "RelativePath": "index#[.{fingerprint=4lu37fwiu5}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "dg4iiy4cu5",
+      "Integrity": "DUGNzI+6a9oTxWHyquMUqqgyFgMZ3ZjrA3s+m4G6EO4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.css"
+    },
+    {
+      "Identity": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/n409znh1f8-1x0u47tdv0.gz",
+      "SourceId": "ispk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/ispk",
+      "RelativePath": "index#[.{fingerprint=1x0u47tdv0}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "0056rjgell",
+      "Integrity": "0AU0haiwJ1sNPt5B/rYkUA9xELBShRA3SnietFVeBRc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.html"
+    },
+    {
+      "Identity": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.css",
+      "SourceId": "ispk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/",
+      "BasePath": "_content/ispk",
+      "RelativePath": "index#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4lu37fwiu5",
+      "Integrity": "aL9Vz28buNGONIQRpEMiuwAykeU6NR6MT2gmzSZQ9Ac=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.css"
+    },
+    {
+      "Identity": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.html",
+      "SourceId": "ispk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/",
+      "BasePath": "_content/ispk",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1x0u47tdv0",
+      "Integrity": "JXBjUHcz3wwGXFdVZ6ki39TM7jl3AmbKpWlCbk9XvJE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    },
+    {
+      "Identity": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.js",
+      "SourceId": "ispk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/",
+      "BasePath": "_content/ispk",
+      "RelativePath": "index#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lego5njvg4",
+      "Integrity": "DTquYOOepjM+W4KRug5r9kcOzmD1QX8R44nIaFGoL84=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.js"
+    },
+    {
+      "Identity": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/login.html",
+      "SourceId": "ispk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/",
+      "BasePath": "_content/ispk",
+      "RelativePath": "login#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9cw375s321",
+      "Integrity": "hx6O9uzm1VbJ91H6kMe/aRCIX/VtfpoZBZFu8SS5AHI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/login.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.1x0u47tdv0.html",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/n409znh1f8-1x0u47tdv0.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003333333333"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "299"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0AU0haiwJ1sNPt5B/rYkUA9xELBShRA3SnietFVeBRc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:41:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JXBjUHcz3wwGXFdVZ6ki39TM7jl3AmbKpWlCbk9XvJE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1x0u47tdv0"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXBjUHcz3wwGXFdVZ6ki39TM7jl3AmbKpWlCbk9XvJE="
+        }
+      ]
+    },
+    {
+      "Route": "index.1x0u47tdv0.html",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "529"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXBjUHcz3wwGXFdVZ6ki39TM7jl3AmbKpWlCbk9XvJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:41:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1x0u47tdv0"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXBjUHcz3wwGXFdVZ6ki39TM7jl3AmbKpWlCbk9XvJE="
+        }
+      ]
+    },
+    {
+      "Route": "index.1x0u47tdv0.html.gz",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/n409znh1f8-1x0u47tdv0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "299"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0AU0haiwJ1sNPt5B/rYkUA9xELBShRA3SnietFVeBRc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:41:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1x0u47tdv0"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0AU0haiwJ1sNPt5B/rYkUA9xELBShRA3SnietFVeBRc="
+        }
+      ]
+    },
+    {
+      "Route": "index.4lu37fwiu5.css",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/m619kwmba5-4lu37fwiu5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001464128843"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "682"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DUGNzI+6a9oTxWHyquMUqqgyFgMZ3ZjrA3s+m4G6EO4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:11:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"aL9Vz28buNGONIQRpEMiuwAykeU6NR6MT2gmzSZQ9Ac=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4lu37fwiu5"
+        },
+        {
+          "Name": "label",
+          "Value": "index.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aL9Vz28buNGONIQRpEMiuwAykeU6NR6MT2gmzSZQ9Ac="
+        }
+      ]
+    },
+    {
+      "Route": "index.4lu37fwiu5.css",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1444"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aL9Vz28buNGONIQRpEMiuwAykeU6NR6MT2gmzSZQ9Ac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:11:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4lu37fwiu5"
+        },
+        {
+          "Name": "label",
+          "Value": "index.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aL9Vz28buNGONIQRpEMiuwAykeU6NR6MT2gmzSZQ9Ac="
+        }
+      ]
+    },
+    {
+      "Route": "index.4lu37fwiu5.css.gz",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/m619kwmba5-4lu37fwiu5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "682"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DUGNzI+6a9oTxWHyquMUqqgyFgMZ3ZjrA3s+m4G6EO4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:11:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4lu37fwiu5"
+        },
+        {
+          "Name": "label",
+          "Value": "index.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DUGNzI+6a9oTxWHyquMUqqgyFgMZ3ZjrA3s+m4G6EO4="
+        }
+      ]
+    },
+    {
+      "Route": "index.css",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/m619kwmba5-4lu37fwiu5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001464128843"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "682"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DUGNzI+6a9oTxWHyquMUqqgyFgMZ3ZjrA3s+m4G6EO4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:11:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"aL9Vz28buNGONIQRpEMiuwAykeU6NR6MT2gmzSZQ9Ac=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aL9Vz28buNGONIQRpEMiuwAykeU6NR6MT2gmzSZQ9Ac="
+        }
+      ]
+    },
+    {
+      "Route": "index.css",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1444"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aL9Vz28buNGONIQRpEMiuwAykeU6NR6MT2gmzSZQ9Ac=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:11:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aL9Vz28buNGONIQRpEMiuwAykeU6NR6MT2gmzSZQ9Ac="
+        }
+      ]
+    },
+    {
+      "Route": "index.css.gz",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/m619kwmba5-4lu37fwiu5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "682"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DUGNzI+6a9oTxWHyquMUqqgyFgMZ3ZjrA3s+m4G6EO4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:11:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DUGNzI+6a9oTxWHyquMUqqgyFgMZ3ZjrA3s+m4G6EO4="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/n409znh1f8-1x0u47tdv0.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003333333333"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "299"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0AU0haiwJ1sNPt5B/rYkUA9xELBShRA3SnietFVeBRc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:41:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JXBjUHcz3wwGXFdVZ6ki39TM7jl3AmbKpWlCbk9XvJE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXBjUHcz3wwGXFdVZ6ki39TM7jl3AmbKpWlCbk9XvJE="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "529"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JXBjUHcz3wwGXFdVZ6ki39TM7jl3AmbKpWlCbk9XvJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:41:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JXBjUHcz3wwGXFdVZ6ki39TM7jl3AmbKpWlCbk9XvJE="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/n409znh1f8-1x0u47tdv0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "299"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0AU0haiwJ1sNPt5B/rYkUA9xELBShRA3SnietFVeBRc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:41:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0AU0haiwJ1sNPt5B/rYkUA9xELBShRA3SnietFVeBRc="
+        }
+      ]
+    },
+    {
+      "Route": "index.js",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/kd310vmtki-lego5njvg4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004651162791"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "214"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6C00e1oEX80lFjB/C7HoAAUlgQPlLC4AIAPaUZ418TY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:44:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DTquYOOepjM+W4KRug5r9kcOzmD1QX8R44nIaFGoL84=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DTquYOOepjM+W4KRug5r9kcOzmD1QX8R44nIaFGoL84="
+        }
+      ]
+    },
+    {
+      "Route": "index.js",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "489"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DTquYOOepjM+W4KRug5r9kcOzmD1QX8R44nIaFGoL84=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:44:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DTquYOOepjM+W4KRug5r9kcOzmD1QX8R44nIaFGoL84="
+        }
+      ]
+    },
+    {
+      "Route": "index.js.gz",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/kd310vmtki-lego5njvg4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "214"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6C00e1oEX80lFjB/C7HoAAUlgQPlLC4AIAPaUZ418TY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:44:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6C00e1oEX80lFjB/C7HoAAUlgQPlLC4AIAPaUZ418TY="
+        }
+      ]
+    },
+    {
+      "Route": "index.lego5njvg4.js",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/kd310vmtki-lego5njvg4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004651162791"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "214"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6C00e1oEX80lFjB/C7HoAAUlgQPlLC4AIAPaUZ418TY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:44:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DTquYOOepjM+W4KRug5r9kcOzmD1QX8R44nIaFGoL84=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lego5njvg4"
+        },
+        {
+          "Name": "label",
+          "Value": "index.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DTquYOOepjM+W4KRug5r9kcOzmD1QX8R44nIaFGoL84="
+        }
+      ]
+    },
+    {
+      "Route": "index.lego5njvg4.js",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "489"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DTquYOOepjM+W4KRug5r9kcOzmD1QX8R44nIaFGoL84=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:44:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lego5njvg4"
+        },
+        {
+          "Name": "label",
+          "Value": "index.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DTquYOOepjM+W4KRug5r9kcOzmD1QX8R44nIaFGoL84="
+        }
+      ]
+    },
+    {
+      "Route": "index.lego5njvg4.js.gz",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/kd310vmtki-lego5njvg4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "214"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6C00e1oEX80lFjB/C7HoAAUlgQPlLC4AIAPaUZ418TY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:44:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lego5njvg4"
+        },
+        {
+          "Name": "label",
+          "Value": "index.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6C00e1oEX80lFjB/C7HoAAUlgQPlLC4AIAPaUZ418TY="
+        }
+      ]
+    },
+    {
+      "Route": "login.9cw375s321.html",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/4sdyrsxxpv-9cw375s321.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005555555556"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XOtbXMcplVL7lhptGvg/G6A3mW9RrsO9cfO7OAB0xZk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:50:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hx6O9uzm1VbJ91H6kMe/aRCIX/VtfpoZBZFu8SS5AHI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9cw375s321"
+        },
+        {
+          "Name": "label",
+          "Value": "login.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hx6O9uzm1VbJ91H6kMe/aRCIX/VtfpoZBZFu8SS5AHI="
+        }
+      ]
+    },
+    {
+      "Route": "login.9cw375s321.html",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "243"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hx6O9uzm1VbJ91H6kMe/aRCIX/VtfpoZBZFu8SS5AHI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:50:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9cw375s321"
+        },
+        {
+          "Name": "label",
+          "Value": "login.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hx6O9uzm1VbJ91H6kMe/aRCIX/VtfpoZBZFu8SS5AHI="
+        }
+      ]
+    },
+    {
+      "Route": "login.9cw375s321.html.gz",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/4sdyrsxxpv-9cw375s321.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XOtbXMcplVL7lhptGvg/G6A3mW9RrsO9cfO7OAB0xZk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:50:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9cw375s321"
+        },
+        {
+          "Name": "label",
+          "Value": "login.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XOtbXMcplVL7lhptGvg/G6A3mW9RrsO9cfO7OAB0xZk="
+        }
+      ]
+    },
+    {
+      "Route": "login.html",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/4sdyrsxxpv-9cw375s321.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005555555556"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XOtbXMcplVL7lhptGvg/G6A3mW9RrsO9cfO7OAB0xZk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:50:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hx6O9uzm1VbJ91H6kMe/aRCIX/VtfpoZBZFu8SS5AHI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hx6O9uzm1VbJ91H6kMe/aRCIX/VtfpoZBZFu8SS5AHI="
+        }
+      ]
+    },
+    {
+      "Route": "login.html",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/wwwroot/login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "243"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hx6O9uzm1VbJ91H6kMe/aRCIX/VtfpoZBZFu8SS5AHI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:50:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hx6O9uzm1VbJ91H6kMe/aRCIX/VtfpoZBZFu8SS5AHI="
+        }
+      ]
+    },
+    {
+      "Route": "login.html.gz",
+      "AssetFile": "/home/psychedelicfrog/uni_darbai/ispk/obj/Debug/net9.0/compressed/4sdyrsxxpv-9cw375s321.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "179"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XOtbXMcplVL7lhptGvg/G6A3mW9RrsO9cfO7OAB0xZk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Oct 2025 15:50:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XOtbXMcplVL7lhptGvg/G6A3mW9RrsO9cfO7OAB0xZk="
+        }
+      ]
+    }
+  ]
+}
