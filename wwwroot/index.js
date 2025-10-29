@@ -1,4 +1,5 @@
 const goToLogin = () => window.location.href = "login.html";
+const goToSignUp = () => window.location.href = "signup.html";
 
 const getTest = () => {
     fetch("/test")
