@@ -2,6 +2,7 @@ namespace ispk.models;
 
 public class User{
     public int id {get; set;}
-    public string email {get; set;}
-    public string password {get; set;}
+    public required string name {get; set;}
+    public required string email {get; set;}
+    public required string password {get; set;}
 }
