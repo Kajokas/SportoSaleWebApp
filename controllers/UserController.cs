@@ -10,21 +10,18 @@ namespace ispk.controllers {
     public class UsersController : ControllerBase {
 	private readonly AppDbContext _db;
 
-        public UsersController(AppDbContext db)
-        {
+        public UsersController(AppDbContext db) {
             _db = db;
         }
 
 	[HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
-        {
+        public async Task<ActionResult<IEnumerable<User>>> GetUsers() {
             var users = await _db.Users.ToListAsync();
             return Ok(users);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(int id)
-        {
+        public async Task<ActionResult<User>> GetUser(int id) {
             var user = await _db.Users.FindAsync(id);
             if (user == null) {
 		return NotFound();
@@ -33,8 +30,7 @@ namespace ispk.controllers {
         }
 
         [HttpPost("login")]
-        public async Task<ActionResult<User>> GetUser(UserDTO userDTO)
-        {
+        public async Task<ActionResult<User>> GetUser(UserDTO userDTO) {
             var user = await _db.Users.FirstOrDefaultAsync(u => u.email == userDTO.email && u.password == userDTO.password);
             if (user == null) {
 		return NotFound();
@@ -43,8 +39,7 @@ namespace ispk.controllers {
         }
 
 	[HttpPost("signup")]
-        public async Task<ActionResult<User>> CreateUser(User user)
-        {
+        public async Task<ActionResult<User>> CreateUser(User user) {
 	    try {
 		_db.Users.Add(user);
 		await _db.SaveChangesAsync();
