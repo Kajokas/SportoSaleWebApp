@@ -48,5 +48,26 @@ namespace ispk.controllers {
 		return StatusCode(500, "Something whent wrong");
 	    }
         }
+
+	[HttpPut("update")]
+        public async Task<ActionResult<User>> UpdateUser(User newUser) {
+	    try {
+		var user = await _db.Users.FindAsync(newUser.id);
+		if (user == null) {
+		    return NotFound();
+		} 
+
+		user.name = newUser.name;
+		user.email = newUser.email;
+		user.password = newUser.password;
+
+		_db.Users.Update(user);
+		await _db.SaveChangesAsync();
+
+		return Ok(user);
+	    } catch {
+		return StatusCode(500, "Something whent wrong");
+	    }
+        }
     }
 }
