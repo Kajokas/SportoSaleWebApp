@@ -1,8 +1,12 @@
+using Microsoft.AspNetCore.Identity;
 namespace ispk.models;
 
-public class User{
-    public int id {get; set;}
-    public required string name {get; set;}
-    public required string email {get; set;}
-    public required string password {get; set;}
+public enum UserRole {
+    ADMIN,
+    CLIENT,
+    TRAINER
+}
+
+public class User: IdentityUser<int> {
+    public required UserRole role { get; set; } = UserRole.CLIENT;
 }
