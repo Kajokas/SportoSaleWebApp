@@ -10,3 +10,4 @@ const getUsers = () => {
 	})
 	.catch(err => console.error("Error fetching /test:", err));
 };
+
