@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using ispk.data;
-using ispk.models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,12 +15,4 @@ app.UseStaticFiles();
 
 app.MapControllers();
 
-app.MapGet("/test", () => test());
-
 app.Run();
-
-String test(){
-    String test = "Testingtong the testilion!";
-    Console.WriteLine(test);
-    return test;
-}
