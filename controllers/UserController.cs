@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ispk.data;
 using ispk.models;
+using ispk.dto;
 
 namespace ispk.controllers {
     [ApiController]
@@ -31,10 +32,10 @@ namespace ispk.controllers {
             return Ok(user);
         }
 
-        [HttpGet("login")]
-        public async Task<ActionResult<User>> GetUser(string email, string password)
+        [HttpPost("login")]
+        public async Task<ActionResult<User>> GetUser(UserDTO userDTO)
         {
-            var user = await _db.Users.FirstOrDefaultAsync(u => u.email == email && u.password == password);
+            var user = await _db.Users.FirstOrDefaultAsync(u => u.email == userDTO.email && u.password == userDTO.password);
             if (user == null) {
 		return NotFound();
 	    }
