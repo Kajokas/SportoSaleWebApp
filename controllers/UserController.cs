@@ -1,6 +1,8 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 
+using System.Security.Claims;
+
 using ispk.data;
 using ispk.dto;
 using ispk.models;
@@ -84,13 +86,13 @@ namespace ispk.controllers {
                 role = user.role
             };
 
-            var token = generateAccessToken(response.name!);
+            var token = generateAccessToken(user);
 
             var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
 
             Response.Cookies.Append("AccessToken", tokenString, new CookieOptions {
                 HttpOnly = true,
-                Secure = true,
+                Secure = false,
                 SameSite = SameSiteMode.Strict,
                 Expires = DateTime.UtcNow.AddMinutes(6000)
             });
@@ -124,13 +126,24 @@ namespace ispk.controllers {
             return Ok(new { message = "Logged out successfully" });
         }
 
-        private JwtSecurityToken generateAccessToken(string userName) {
+        private JwtSecurityToken generateAccessToken(User user) {
+	    var claims = new List<Claim> {
+		new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
+		new Claim(JwtRegisteredClaimNames.Email, user.Email),
+		new Claim("role", user.role.ToString()),
+		new Claim("userId", user.Id.ToString()),
+		new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+	    };
+
+	    var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:SecretKey"]!));
+	    var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
             var token = new JwtSecurityToken(
                     issuer: _configuration["JwtSettings:Issuer"],
                     audience: _configuration["JwtSettings:Audience"],
-                    expires: DateTime.UtcNow.AddMinutes(1),
-                    signingCredentials: new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:SecretKey"]!)),
-                        SecurityAlgorithms.HmacSha256)
+		    claims: claims,
+                    expires: DateTime.UtcNow.AddHours(1),
+		    signingCredentials: creds
                     );
 
             return token;

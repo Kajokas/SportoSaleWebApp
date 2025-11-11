@@ -1,6 +1,8 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 
+using Microsoft.AspNetCore.Authorization;
+
 using ispk.data;
 using ispk.dto;
 using ispk.models;
@@ -25,9 +27,70 @@ namespace ispk.controllers {
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Membership>>> getMembership() {
+        public async Task<ActionResult<IEnumerable<MembershipDTO>>> getMembership() {
             var memberships = await _db.Membership.ToListAsync();
-            return Ok(memberships.Select(m => new { m.id, m.createdAt, m.expirationDate}));
+	    var membershipsDTOs = memberships
+		.Select(m => MembershipDTO.createDtoFromMembership(m))
+		.ToList();
+
+	    return Ok(membershipsDTOs);
         }
+
+	[HttpGet("user/{id}")]
+	public async Task<ActionResult<MembershipDTO>> getUserMembership(int id) {
+	    var membership = await _db.Membership
+		.Include(m => m.user)
+		.Include(m => m.membershipType)
+		.FirstOrDefaultAsync(m => m.userId == id);
+
+	    var dto = membership != null ? MembershipDTO.createDtoFromMembership(membership) : null;
+
+	    return Ok(dto);
+	}
+
+	[HttpPost("purchase")]
+	public async Task<ActionResult<MembershipDTO>> purchaseMembership() {
+	    var token = Request.Cookies["AccessToken"];
+	    if (string.IsNullOrEmpty(token)) {
+		return Unauthorized("You need to be loged in to purchase membership");
+	    }
+
+	    var handler = new JwtSecurityTokenHandler();
+	    var jwtToken = handler.ReadJwtToken(token);
+	    var claims = jwtToken.Claims;
+
+	    var userIdClaim = claims.FirstOrDefault(c => c.Type == "userId")?.Value;
+
+	    var userId = int.Parse(userIdClaim);
+
+	    var membership = createMembership(userId);
+
+	    _db.Membership.Add(membership);
+	    await _db.SaveChangesAsync(); 
+
+	    return Ok("Done");
+	}
+
+	[HttpDelete("cancel/{id}")]
+	public async Task<ActionResult<string>> deleteMembership(int id) {
+
+	    var membership = await _db.Membership.FindAsync(id);
+	    if (membership != null) {
+		_db.Membership.Remove(membership);
+		await _db.SaveChangesAsync();
+	    }
+
+	    return Ok("Memebership has been canceled");
+	}
+
+	private Membership createMembership(int userId) {
+	    var membership = new Membership {
+		createdAt = DateTime.Now,
+		userId = userId,
+		membershipTypeId = 1
+	    };
+
+	    return membership;
+	}
     }
 }

@@ -30,6 +30,6 @@ namespace ispk.data {
 	}
 
 	public DbSet<Membership> Membership { get; set; } = null!;
-        public DbSet<MembershipType> MembershipTypes { get; set; } = null!;
+        public DbSet<MembershipType> MembershipType { get; set; } = null!;
     }
 }
