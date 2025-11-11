@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ispk.data;
 
@@ -10,9 +11,11 @@ using ispk.data;
 namespace ispk.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251111164959_AddMembershipEntity")]
+    partial class AddMembershipEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.10");
@@ -152,41 +155,18 @@ namespace ispk.Migrations
                     b.Property<DateTime>("createdAt")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime?>("expirationDate")
+                    b.Property<DateTime>("expirationDate")
                         .HasColumnType("TEXT");
-
-                    b.Property<int>("membershipTypeId")
-                        .HasColumnType("INTEGER");
 
                     b.Property<int>("userId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("id");
 
-                    b.HasIndex("membershipTypeId");
-
                     b.HasIndex("userId")
                         .IsUnique();
 
                     b.ToTable("Membership");
-                });
-
-            modelBuilder.Entity("ispk.models.MembershipType", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("name")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<decimal>("price")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("id");
-
-                    b.ToTable("MembershipType");
                 });
 
             modelBuilder.Entity("ispk.models.User", b =>
@@ -311,26 +291,13 @@ namespace ispk.Migrations
 
             modelBuilder.Entity("ispk.models.Membership", b =>
                 {
-                    b.HasOne("ispk.models.MembershipType", "membershipType")
-                        .WithMany("memberships")
-                        .HasForeignKey("membershipTypeId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("ispk.models.User", "user")
                         .WithOne("membership")
                         .HasForeignKey("ispk.models.Membership", "userId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("membershipType");
-
                     b.Navigation("user");
-                });
-
-            modelBuilder.Entity("ispk.models.MembershipType", b =>
-                {
-                    b.Navigation("memberships");
                 });
 
             modelBuilder.Entity("ispk.models.User", b =>

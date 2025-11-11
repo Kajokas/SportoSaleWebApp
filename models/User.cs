@@ -9,4 +9,5 @@ public enum UserRole {
 
 public class User : IdentityUser<int> {
     public required UserRole role { get; set; } = UserRole.CLIENT;
+    public Membership membership { get; set; }
 }
