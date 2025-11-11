@@ -57,7 +57,12 @@ namespace ispk.controllers {
 		return Unauthorized("You need to be loged in to make a purchase");
 	    }
 
-	    var membership = createMembership(userId);
+	    //TODO: change to actual choice
+	    var membershipTypeId = 1;
+
+	    var membershipType = await _db.MembershipType.FindAsync(membershipTypeId);
+
+	    var membership = createMembership(userId, membershipType);
 
 	    _db.Membership.Add(membership);
 	    await _db.SaveChangesAsync(); 
@@ -91,11 +96,12 @@ namespace ispk.controllers {
 	    return userId;
 	}
 
-	private Membership createMembership(int userId) {
+	private Membership createMembership(int userId, MembershipType membershipType) {
 	    var membership = new Membership {
 		createdAt = DateTime.Now,
+		expirationDate = DateTime.Now + membershipType.validity,
 		userId = userId,
-		membershipTypeId = 1
+		membershipTypeId = membershipType.id
 	    };
 
 	    return membership;
