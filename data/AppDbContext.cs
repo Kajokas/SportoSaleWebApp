@@ -9,9 +9,6 @@ namespace ispk.data {
     public class AppDbContext : IdentityDbContext<User, IdentityRole<int>, int> {
 	public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-	public DbSet<Membership> Membership { get; set; } = null!;
-        public DbSet<MembershipType> MembershipTypes { get; set; } = null!;
-
 	protected override void OnModelCreating(ModelBuilder builder) {
 	    base.OnModelCreating(builder);
 
@@ -31,5 +28,8 @@ namespace ispk.data {
 		.HasForeignKey(m => m.membershipTypeId)
 		.OnDelete(DeleteBehavior.Restrict);
 	}
+
+	public DbSet<Membership> Membership { get; set; } = null!;
+        public DbSet<MembershipType> MembershipTypes { get; set; } = null!;
     }
 }
