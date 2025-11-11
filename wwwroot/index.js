@@ -11,3 +11,8 @@ const getUsers = () => {
 	.catch(err => console.error("Error fetching /test:", err));
 };
 
+const logout = () =>
+{
+	fetch("/users/logout");
+	alert("You have logged out.");
+}
