@@ -50,18 +50,16 @@ namespace ispk.controllers {
 
 	[HttpPost("purchase")]
 	public async Task<ActionResult<MembershipDTO>> purchaseMembership() {
-	    var token = Request.Cookies["AccessToken"];
-	    if (string.IsNullOrEmpty(token)) {
-		return Unauthorized("You need to be loged in to purchase membership");
+	    int userId; 
+	    try {
+		userId = authorize();
+	    } catch {
+		return Unauthorized("You need to be loged in to make a purchase");
 	    }
 
-	    var handler = new JwtSecurityTokenHandler();
-	    var jwtToken = handler.ReadJwtToken(token);
-	    var claims = jwtToken.Claims;
-
-	    var userIdClaim = claims.FirstOrDefault(c => c.Type == "userId")?.Value;
-
-	    var userId = int.Parse(userIdClaim);
+	    if (userId == null) {
+		return Unauthorized("You need to be loged in to purchase membership");
+	    }
 
 	    var membership = createMembership(userId);
 
@@ -81,6 +79,20 @@ namespace ispk.controllers {
 	    }
 
 	    return Ok("Memebership has been canceled");
+	}
+
+	private int authorize() {
+	    var token = Request.Cookies["AccessToken"];
+
+	    var handler = new JwtSecurityTokenHandler();
+	    var jwtToken = handler.ReadJwtToken(token);
+	    var claims = jwtToken.Claims;
+
+	    var userIdClaim = claims.FirstOrDefault(c => c.Type == "userId")?.Value;
+
+	    var userId = int.Parse(userIdClaim);
+
+	    return userId;
 	}
 
 	private Membership createMembership(int userId) {
