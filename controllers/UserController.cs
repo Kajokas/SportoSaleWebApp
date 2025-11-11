@@ -68,12 +68,12 @@ namespace ispk.controllers {
 
         [HttpPost("login")]
         public async Task<ActionResult> login([FromBody] UserDTO userDTO) {
-            var user = await _userManager.FindByEmailAsync(userDTO.email);
+            var user = await _userManager.FindByEmailAsync(userDTO.email!);
             if (user == null) {
                 return Unauthorized("Invalid email or password");
             }
 
-            var result = await _signInManager.CheckPasswordSignInAsync(user, userDTO.password, false);
+            var result = await _signInManager.CheckPasswordSignInAsync(user, userDTO.password!, false);
             if (!result.Succeeded) {
                 return Unauthorized("Invalid email or password");
             }
@@ -84,7 +84,7 @@ namespace ispk.controllers {
                 role = user.role
             };
 
-            var token = generateAccessToken(response.name);
+            var token = generateAccessToken(response.name!);
 
             var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
 
@@ -100,7 +100,7 @@ namespace ispk.controllers {
 
         [HttpPut("update")]
         public async Task<ActionResult> updateUser([FromBody] UserDTO newUser) {
-            var user = await _userManager.FindByEmailAsync(newUser.email);
+            var user = await _userManager.FindByEmailAsync(newUser.email!);
             if (user == null) {
                 return NotFound();
             }
@@ -118,7 +118,7 @@ namespace ispk.controllers {
         }
 
         [HttpGet("logout")]
-        public async Task<ActionResult> logOut() {
+        public ActionResult logOut() {
             Response.Cookies.Delete("AccessToken");
 
             return Ok(new { message = "Logged out successfully" });
@@ -129,7 +129,7 @@ namespace ispk.controllers {
                     issuer: _configuration["JwtSettings:Issuer"],
                     audience: _configuration["JwtSettings:Audience"],
                     expires: DateTime.UtcNow.AddMinutes(1),
-                    signingCredentials: new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:SecretKey"])),
+                    signingCredentials: new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:SecretKey"]!)),
                         SecurityAlgorithms.HmacSha256)
                     );
 
