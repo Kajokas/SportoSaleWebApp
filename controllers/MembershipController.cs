@@ -57,10 +57,6 @@ namespace ispk.controllers {
 		return Unauthorized("You need to be loged in to make a purchase");
 	    }
 
-	    if (userId == null) {
-		return Unauthorized("You need to be loged in to purchase membership");
-	    }
-
 	    var membership = createMembership(userId);
 
 	    _db.Membership.Add(membership);
